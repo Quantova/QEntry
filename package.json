@@ -1,0 +1,70 @@
+{
+  "name": "@quantovainc/qentry",
+  "version": "0.1.0",
+  "description": "Quantum secure physical access records for secure facilities. Proves the grant, entry, exit, suspension and revocation of access to a zone, with ML-DSA-65 under FIPS 204 and Quantova time proofs. No personal data ever leaves the party that holds it.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "lib/",
+    "wasm/qentry_native.js",
+    "wasm/qentry_native_bg.wasm",
+    "wasm/qentry_native.d.ts",
+    "LICENSE-APACHE",
+    "LICENSE-MIT",
+    "NOTICE",
+    "AUTHORS"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "dependencies": {
+    "@quantovainc/qstamp": "0.6.14"
+  },
+  "keywords": [
+    "post-quantum",
+    "quantum-safe",
+    "access-control",
+    "physical-security",
+    "identity",
+    "facility",
+    "ml-dsa",
+    "fips-204",
+    "quantova"
+  ],
+  "license": "Apache-2.0 OR MIT",
+  "author": "Quantova Inc",
+  "homepage": "https://github.com/Quantova/QEntry",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quantova/QEntry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Quantova/QEntry/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "eslint": "9.39.1",
+    "eslint-plugin-security": "3.0.1",
+    "globals": "16.5.0"
+  }
+}

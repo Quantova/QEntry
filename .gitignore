@@ -1,0 +1,6 @@
+node_modules/
+*.qentry.json
+*.pending.json
+*.key
+.env*
+native/target/
